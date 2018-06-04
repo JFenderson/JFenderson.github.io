@@ -1,10 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import * as animate from 'react-animations';
-import styles from './skills.module.scss';
 import * as FaIconPack from 'react-icons/lib/fa';
 import * as IoIconPack from 'react-icons/lib/io';
-import IconBabel from '-!react-svg-loader!../../utils/devicon-master/icons/babel/babel-original.svg';
-import IconHtml from '-!react-svg-loader!../../utils/devicon-master/icons/bootstrap/bootstrap-plain.svg';
+
 // import IconAmazonwebservices from '-!react-svg-loader!../../utils/devicon-master/icons/amazonwebservices/amazonewebservices-original.svg';
 
 export default class Skills extends Component{
@@ -19,8 +16,8 @@ export default class Skills extends Component{
                     <div >
                         <h3>Web</h3>
                         <ul>
-                            <li><a href="#"><IconBabel width={100} height={100}/></a></li>
-                            <li><a href="#"><IconHtml width={100} height={100}/></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>

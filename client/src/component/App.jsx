@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Link, HashRouter } from 'react-router-dom';
 import ReactRouter from 'react-router-dom';
 import * as FaIconPack from 'react-icons/lib/fa';
-import styles from './app.scss';
 import Home from './Home';
 import Profile from './Profile';
 import Skills from './Skills';
@@ -50,7 +49,7 @@ export default class Navigation extends Component{
         return(
             <Router>
                 <Fragment>
-                    <div className={styles.navbar} onScroll={this.handleScroll}>
+                    <div onScroll={this.handleScroll}>
                     <span>
                         <img src="../images/profilePic.jpg" alt="profilePic"/>
                     </span>
@@ -62,7 +61,7 @@ export default class Navigation extends Component{
                         <Link to='/education-and-experience'><FaIconPack.FaGraduationCap/></Link>
                         <Link to='contact'><FaIconPack.FaEnvelope/></Link>
                     </div>
-                    <div className={styles.container}>
+                    <div>
                         <Route path='/' component={ Home } />
                         <Route path='/profile' component={ Profile } />
                         <Route path='/projects' component={ Projects } />
