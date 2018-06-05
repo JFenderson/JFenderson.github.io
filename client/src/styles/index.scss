@@ -1,0 +1,18 @@
+$primary-color: rgb(238, 232, 220);
+$secondary-color: rgb(134, 205, 218);
+$font-color: rgb(82, 82, 82);
+
+
+html, body{
+    background-color: $primary-color;
+    
+}
+.landing{
+    color: $font-color;
+    height: 100vh;
+    text-align: center;
+    
+}
+.navbar{
+    
+}

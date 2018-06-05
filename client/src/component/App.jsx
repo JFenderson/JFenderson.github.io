@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Link, HashRouter } from 'react-router-dom';
 import ReactRouter from 'react-router-dom';
 import * as FaIconPack from 'react-icons/lib/fa';
+import styles from '../styles/index.scss';
 import Home from './Home';
 import Profile from './Profile';
 import Skills from './Skills';
@@ -14,6 +15,32 @@ import Landing from './Landing';
 import Contact from './Contact';
 
 export default class Navigation extends Component{
+    // render(){
+    //     return(
+    //         <div className={styles}>
+    //             <Fragment>
+    //                 <div>
+    //                 <nav className={styles.navbar}>
+    //                     <Link to="/"><a className={styles.link} href="#landing">Home</a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#about">Profile</a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#schedule"></a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#comittee">Committee</a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#registration">Register</a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#photo-gallery">Photo Gallery</a></Link>
+    //                     <Link to="/"><a className={styles.link} href="#footer">Contact</a></Link>
+    //                 </nav>
+    //                 </div>
+    //                 <Landing />
+    //                 <Profile />
+    //                 <Experience />
+    //                 <Projects />
+    //                 <Skills />
+    //                 <Interests />
+    //                 <Contact />
+    //             </Fragment>
+    //         </div>
+    //     )
+    // }
     constructor(props){
         super(props);
         this.state = {
@@ -49,10 +76,7 @@ export default class Navigation extends Component{
         return(
             <Router>
                 <Fragment>
-                    <div onScroll={this.handleScroll}>
-                    <span>
-                        <img src="../images/profilePic.jpg" alt="profilePic"/>
-                    </span>
+                    <div onScroll={this.handleScroll} className={styles.navbar}>
                         <Link to='/'><FaIconPack.FaHome/></Link>
                         <Link to='/profile'><FaIconPack.FaUser/></Link>
                         <Link to='/projects'><FaIconPack.FaBriefcase/></Link>

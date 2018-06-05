@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-
+import styles from '../styles/index.scss';
 
 export default class Landing extends Component{
     constructor(){
@@ -9,10 +9,10 @@ export default class Landing extends Component{
 
     render(){
         return(
-            <section>
-                <h1><span>Landing Page</span></h1>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod, illo eaque facilis accusamus at et officiis nulla ver</h2>
-            </section>
+            <div className={styles.landing}>
+                <p>I'm</p><h1>Joseph Fenderson</h1>
+                <span>and this is my page....</span><h2>enjoy</h2>
+            </div>
         )
     }
 }
