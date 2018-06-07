@@ -1,11 +1,10 @@
 const path = require('path');
 const CLIENT_DEST = path.join(__dirname, './client/dist');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const bundleExtractPlugin = new ExtractTextPlugin({filename: 'css/bundle.css'});
 
 module.exports = {
     mode: 'development',
-    entry: ['./client/src/index.js'],
+    entry: './client/src/index.js',
     output: { path: CLIENT_DEST, 
         filename: 'bundle.js' 
             },
@@ -40,9 +39,11 @@ module.exports = {
                             loader: 'css-loader',
                             options: {
                                 modules: true,
+                                importLoaders: 1,
                                 localIdentName: '[name]__[local]__[hash:base64:5]'
                             }
                         },
+                        'postcss-loader'
                     ]
                 })
             },
@@ -60,12 +61,8 @@ module.exports = {
                                 importLoaders: 2,
                                 localIdentName: '[name]__[local]__[hash:base64:5]'
                             }
-                        },{
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        }
+                        },
+                        'sass-loader'
                     ]
                 })
             },
@@ -91,7 +88,6 @@ module.exports = {
     }
     ,
     plugins: [
-        new ExtractTextPlugin({ filename: 'index.css', allChunks: true }),
-        bundleExtractPlugin
+        new ExtractTextPlugin({ filename: 'styles.css', allChunks: true }),
     ]
 }

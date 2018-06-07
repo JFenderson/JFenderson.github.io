@@ -20,7 +20,6 @@ app.use(_express2.default.json());
 
 app.use(_express2.default.urlencoded({ extended: true }));
 
-
 app.listen(3000, function () {
   return console.log('Server is listening on port 3000');
 });

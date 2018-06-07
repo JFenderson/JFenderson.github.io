@@ -10,13 +10,13 @@ export default class Experience extends Component{
                     <h4>Innovate Birmingham</h4>
                     <span>Certificate of Completion</span>
                     <span>Full-Stack Web Development</span>
-                    <span className={styles.dates}>January 2018 - April 2018</span>  
+                    <span >January 2018 - April 2018</span>  
                 </div>
                 <div >
                     <h4>Miles College</h4>
                     <span>Bachelor of Science Degree</span>
                     <span>Business Administration</span>
-                    <span className={styles.dates}>August 2010 - May 2015</span> 
+                    <span >August 2010 - May 2015</span> 
                 </div>
                 <div >
                     <h4>Robert E. Lee High School</h4>
