@@ -77,6 +77,7 @@ export default class Navigation extends Component{
             <Router>
                 <Fragment>
                     <div onScroll={this.handleScroll} className={styles.navbar}>
+                        <a href="#"><img src="../images/logo.png"/></a>
                         <Link to='/'><FaIconPack.FaHome/></Link>
                         <Link to='/profile'><FaIconPack.FaUser/></Link>
                         <Link to='/projects'><FaIconPack.FaBriefcase/></Link>

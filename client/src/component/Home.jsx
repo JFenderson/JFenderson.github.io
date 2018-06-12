@@ -10,11 +10,11 @@ import Contact from './Contact';
 export default class Home extends Component{
     render(){
         return(
-            <Fragment>
+            <Fragment>       
                 <Landing />
                 <Profile />
-                <Experience />
                 <Projects />
+                <Experience />
                 <Skills />
                 <Interests />
                 <Contact />
