@@ -11,36 +11,9 @@ import Experience from './Experience';
 import Projects from './Projects';
 import MoreProjects from './MoreProjects';
 import Interests from './Interests';
-import Landing from './Landing';
 import Contact from './Contact';
 
 export default class Navigation extends Component{
-    // render(){
-    //     return(
-    //         <div className={styles}>
-    //             <Fragment>
-    //                 <div>
-    //                 <nav className={styles.navbar}>
-    //                     <Link to="/"><a className={styles.link} href="#landing">Home</a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#about">Profile</a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#schedule"></a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#comittee">Committee</a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#registration">Register</a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#photo-gallery">Photo Gallery</a></Link>
-    //                     <Link to="/"><a className={styles.link} href="#footer">Contact</a></Link>
-    //                 </nav>
-    //                 </div>
-    //                 <Landing />
-    //                 <Profile />
-    //                 <Experience />
-    //                 <Projects />
-    //                 <Skills />
-    //                 <Interests />
-    //                 <Contact />
-    //             </Fragment>
-    //         </div>
-    //     )
-    // }
     constructor(props){
         super(props);
         this.state = {

@@ -1,5 +1,6 @@
 {
-    "basics": {
+    "basics": [
+        {
         "name": "Joseph Fenderson",
         "label": "Junior Web Developer",
         "picture": "/client/images/profilePic.jpg",
@@ -11,7 +12,8 @@
             "postalCode": "35064",
             "city": "Fairfield",
             "state": "Alabama"
-        },
+        }
+    ,
         "profiles": [
             {
                 "network": "Facebook",
@@ -29,7 +31,8 @@
                 "url": ""
             }
         ]
-    },
+    }
+],
     "work":[
         {
             "company": "Sheraton Birmingham Hotel",
