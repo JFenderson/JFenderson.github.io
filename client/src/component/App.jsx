@@ -46,6 +46,11 @@ export default class Navigation extends Component{
 
 
     render(){
+        // const resume = this.props.data.map((value, index)=> {
+        //     console.log('this is the value', value);
+        //     console.log('this is the index', index);
+        // })
+        // console.log(this.props)
         return(
             <Router>
                 <Fragment>

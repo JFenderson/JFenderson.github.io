@@ -5,34 +5,25 @@ import Experience from './Experience';
 import Projects from './Projects';
 import Interests from './/Interests';
 import Contact from './Contact';
-import * as data from './resume.json'
+import * as resumeData from './resume.json'
 
 export default class Home extends Component{
     constructor(props){
         super(props);
         this.state={
-            data:[]
+            data:resumeData
         }
     }
 
 
-    componentDidMount(){
-        fetch("./resume.json")
-        .then(response => response.json())
-        .then(json => {
-          console.log(json);
-          this.setState({
-            data: json
-          });
-        });
-
-    }
-
     render(){
-        console.log(data)
+        // const resume = data.map((value, index)=> {
+        //     console.log('this is the value', value);
+        //     console.log('this is the index', index);
+        // })
         return(
-            <Fragment>       
-                <Profile />
+            <Fragment> 
+                <Profile resumeProfile={this.state.data}/>
                 <Projects />
                 <Experience />
                 <Skills />

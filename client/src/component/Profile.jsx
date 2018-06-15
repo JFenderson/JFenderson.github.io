@@ -6,17 +6,24 @@ import style from '../styles/index.scss'
 
 export default class Profile extends Component{
     render(){
+        console.log(this.props)
+        const resume = this.props.resumeProfile.basics;
+        // resume.map((val, ind)=> {
+        //     console.log(val);
+        //     console.log(ind);
+        // })
         return(
             <div className={style.profile}>
                 <div>
                     <img src="../images/profilePic.jpg" alt="profile picture"/>
                 </div>
                 <section>
-                    <h1>Joseph Fenderson</h1>
+                    <h1>{resume.name}</h1>
+                    <h3>{resume.label}</h3>
                     <ul>
-                        <li>Fairfield, Al 35064</li>
-                        <li>(205)396-7054</li>
-                        <li>fenderson.joseph@gmail.com</li>
+                        <li></li>
+                        <li>{resume.phone}</li>
+                        <li>{resume.email}</li>
                     </ul>
                 </section>
                 <div className={style.contactIcons}>

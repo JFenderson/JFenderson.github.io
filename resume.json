@@ -7,12 +7,7 @@
         "email": "fenderson.joseph@gmail.com",
         "phone": "2053967054",
         "website": "In Progress",
-        "location": {
-            "address": "Fairfield",
-            "postalCode": "35064",
-            "city": "Fairfield",
-            "state": "Alabama"
-        }
+        "location": "Fairfield, AL 35064"
     ,
         "profiles": [
             {
