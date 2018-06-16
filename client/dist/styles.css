@@ -1,7 +1,21 @@
 html, body {
-  background-color: #eee8dc; }
+  background-color: #eee8dc;
+  padding: 0em 4em 0em 4em; }
 
 .index__landing__2kLKq {
   color: #525252;
   height: 100vh;
   text-align: center; }
+
+.index__profile__3Nn81 {
+  text-align: center;
+  height: 40vh;
+  background-color: #eee8dc; }
+  .index__profile__3Nn81 ul {
+    text-align: center;
+    display: inline-flex;
+    list-style-type: none; }
+    .index__profile__3Nn81 ul li {
+      margin-right: 10px; }
+  .index__profile__3Nn81 .index__contactIcons__38kPQ {
+    font-size: 2em; }

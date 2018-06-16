@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
+import style from '../styles/index.scss';
 
 export default class Experience extends Component{
     render(){
         return(
-            <div >
+            <div className={style.education} >
                 <h2>Education</h2>
                 <div >
                     <h4>Innovate Birmingham</h4>
