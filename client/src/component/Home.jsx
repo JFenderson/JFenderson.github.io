@@ -4,19 +4,30 @@ import Skills from './Skills';
 import Experience from './Experience';
 import Projects from './Projects';
 import Interests from './/Interests';
-import Contact from './Contact';
+import Education from './Education';
+// import * as resume from './resume.json'
 
-export default class Home extends Component{
-    render(){
+ const Home = (props)=> {
+    
+        // const props = this.props;
+        const profileData = props.resume.basics;
+        const workData = props.resume.work;
+        const educationData = props.resume.education;
+        const skillsData = props.resume.skills;
+        const projectData = props.resume.projects;
+        const interestData = props.resume.interests;
         return(
-            <Fragment>       
-                <Profile />
-                <Projects />
-                <Experience />
-                <Skills />
-                <Interests />
-                <Contact />
-            </Fragment>
+            <div>
+                <div>
+                    <Profile profileData={profileData}/>
+                </div>
+                <Projects projectData={projectData} />
+                <Experience workData={workData} />
+                <Skills skillsData={skillsData}/>
+                <Education educationData={educationData} />
+                <Interests interestData={interestData} />
+            </div>
         )
-    }
 }
+
+export default Home;

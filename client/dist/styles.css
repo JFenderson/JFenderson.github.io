@@ -1,5 +1,4 @@
 html, body {
-  background-color: #eee8dc;
   padding: 0em 4em 0em 4em; }
 
 .index__landing__2kLKq {
@@ -9,8 +8,7 @@ html, body {
 
 .index__profile__3Nn81 {
   text-align: center;
-  height: 40vh;
-  background-color: #eee8dc; }
+  height: 40vh; }
   .index__profile__3Nn81 ul {
     text-align: center;
     display: inline-flex;

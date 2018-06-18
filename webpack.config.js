@@ -72,6 +72,7 @@ module.exports = {
                     /\.(js|jsx)$/,
                     /\.css$/,
                     /\.scss$/,
+                    /\.json$/
                 ],
                 loader: require.resolve('file-loader'),
                 options: {

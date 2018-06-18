@@ -1,10 +1,11 @@
-{
+
+  {
     "basics": {
         "name": "Joseph Fenderson",
         "label": "Junior Web Developer",
         "picture": "/client/images/profilePic.jpg",
         "email": "fenderson.joseph@gmail.com",
-        "phone": "2053967054",
+        "phone": "205-396-7054",
         "website": "In Progress",
         "location": "Fairfield, Al 35064",
         "profiles": [
@@ -25,44 +26,38 @@
             }
         ]
     },
-    "work":[
-        {
+    "work":[{
             "company": "Sheraton Birmingham Hotel",
             "position": "Accounts Receivables Agent",
             "startDate": "2016-07",
             "endDate": "2018-01"
-        },
-        {
+        },{
             "company": "Westin Birmingham Hotel",
             "position": "Night Auditor",
             "startDate": "2016-06",
             "endDate": "2016-01"
-        },
-        {
+        },{
             "company": "Westin Birmingham Hotel",
             "position": "Welcome Ambassador",
             "startDate": "2015-07",
             "endDate": "2016-01"
-        }
-    ],
-    "internship": [
-        {
+        }],
+    "internship": [{
             "name": "Innovate Birmingham",
             "position": "Teacher's Assistant",
             "website": "https://innovatebirmingham.org",
             "startDate": "2018-04",
             "endDate": "2018-08"
-        }
-    ],
-    "volunteer": [
-        {
+        }],
+    "volunteer": [{
             "company": "STREAM Innovations",
             "position": "Teacher",
             "website": "https://streaminnovations.org",
             "startDate": "2018-06",
-            "endDate": "2018-08"
-        }
-    ],
+            "endDate": "2018-08",
+            "summary": "Taught 7th and 8th graders the basics of web development which included teaching technologies like HTML, CSS, and JavaScript. This was for a 6 week camp."
+        
+    }],
     "projects": [
         {
             "name": "",
@@ -108,26 +103,21 @@
             "name": "",
             "decription": "",
             "technologies": ""
-        }
-    ],
-    "education": [
-        {
+        }],
+    "education": [{
             "institution": "Miles College",
             "area": "Business Administration",
             "degree": "Bachelor of Science",
             "startDate": "2010-08",
             "endDate": "2015-05"
-        },
-        {
+        },{
             "institution": "Innovate Birmingham",
             "area": "Full-Stack Web Development",
             "degree": "Certificate",
             "startDate": "2018-01",
             "endDate": "2018-04"
-        }
-    ],
-    "skills": [
-        {
+        }],
+    "skills": [{
             "name": "Front End Development",
             "level": "Junior",
             "keywords": [
@@ -147,8 +137,5 @@
               "Git",
               "Responsive"
             ]
-          }
-    ]
-
-
+    }]
 }
