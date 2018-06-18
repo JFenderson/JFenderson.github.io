@@ -1,37 +1,27 @@
-import React, { Component } from 'react';
 
+import React from 'react';
 
-export default class Interest extends Component{
-    render(){
-        return(
-            <div>
-                <h2>Interests and Future Goals</h2>
-                <p>I am always ready to learn new thing and explore different opportunities</p>
-                <h3>My Interests</h3>
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                {/* <ul>
-                    <li><div>Cyber Security</div></li>
-                    <li><div>Automation Programming</div></li>
-                    <li><div>Machine Learning</div></li>
-                    <li><div>Cloud Computing</div></li>
-                    <li><div>UI/UX Programming</div></li>
-                    <li><div></div></li>
-                </ul> */}
-                <h3>My Goals</h3>
-                <ul>
-                    <li>Learn C#</li>
-                    <li>Contribute to an open-souce project</li>
-                    <li>Establish a presence on StackOverflow</li>
-                    <li>Help future students of Innovate Birmingham</li>
-                    <li>Teach lower income neighborhoods about different ways to learn IT for free</li>
-                    <li>Teach my children how to code</li>
-                </ul>
-            </div>
+const Interests = (props) => {
+    const getInterests = props.interestData.map(function(item, index) {
+  		return (
+        <div className="box-list__box" key={index}>
+            <h3 className="section-box-title">{item.name}</h3>
+            <div>{item.keywords}</div>
+  				</div>
         )
-    }
-}
+  	});
+
+  	return (
+      <section className="section section__interest">
+        <h2 className="section__title">Interest</h2>
+        <div className="section-content">
+          <div className="box-list">
+            {getInterests}
+          </div>
+        </div>
+      </section>
+  	)
+};
+
+
+export default Interests;

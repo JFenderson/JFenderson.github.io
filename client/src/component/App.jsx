@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Link, HashRouter } from 'react-router-dom';
-import ReactRouter from 'react-router-dom';
 import * as FaIconPack from 'react-icons/lib/fa';
 import styles from '../styles/index.scss';
 import Home from './Home';
