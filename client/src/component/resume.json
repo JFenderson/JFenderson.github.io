@@ -60,49 +60,58 @@
     }],
     "projects": [
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "Final Project – Family Function",
+            "decription": "Website aimed towards connecting families without the help of social media.",
+            "tasks": "My contribution to this project was setting up the Photo Gallery, User profile, database to hold the images (AWS S3 & MySQL), setting up the Node to connect with both the MySQL and S3 database.",
+            "technologies": "HTML, CSS, JavaScript, React JS, Node JS, AWS(S3), MySQL"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "DBLab- Blog Project",
+            "decription": "React based app to showcase message posting.",
+            "task": "I created a server and client side of this react app using MySQL database, stripe payment system, a mailing system, a JavaScript compiler, node server routing and authentication",
+            "technologies": "HTML, CSS, JavaScript, React JS, Node JS, MySQL, Passport JS, Stripe, Mailgun JS, Babel JS, Express JS"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "Chirper",
+            "decription": "Create a front-end app using React.",
+            "task": "I created a timeline setup where messages can be posted and display so that people would be able to see and edit their messages as well by using React JS.",
+            "technologies": "HTML, CSS, JavaScript, React JS"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "API-React",
+            "decription": "Create a app that display people and film from a web API.",
+            "task": "I created the node server that will do a fetch request to the web API. By which I used the information to display a list of the information received (people and films) from the API.",
+            "technologies": "HTML, CSS, JavaScript, React JS"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "TypeWriter",
+            "decription": "Create a typing game using only jQuery.",
+            "task": "This project included uses of loops and conditional statements and DOM Manipulation.",
+            "technologies": "HTML, CSS, JavaScript, JQuery"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "Promise-Lab",
+            "decription": "Showcasing the use of Promises in asynchronous JavaScript",
+            "task": "",
+            "technologies": "HTML, JavaScript"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "99-Lines",
+            "decription": "Creating the lyrics of a song while implementing JavaScript concept of loops and conditional statements such as the \"for loop\".",
+            "task": "",
+            "technologies": "HTML, CSS, JavaScript"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "DOM-DOM-DOM",
+            "decription": "Create squares when clicked and deleted when double-clicked using DOM manipulation in JavaScript",
+            "task": "",
+            "technologies": "HTML, CSS, JavaScript"
         },
         {
-            "name": "",
-            "decription": "",
-            "technologies": ""
+            "name": "Resume",
+            "decription": "Creating a professional resume using HTML and CSS. This was the first project during class.",
+            "task": "",
+            "technologies": "HTML, CSS"
         }],
     "education": [{
             "institution": "Miles College",
@@ -117,6 +126,13 @@
             "startDate": "2018-01",
             "endDate": "2018-04"
         }],
+    "interests": [{
+        "name": "Marching Bands",
+        "keywords": [
+            "music",
+            "movies"
+        ] 
+    }],
     "skills": [{
             "name": "Front End Development",
             "level": "Junior",

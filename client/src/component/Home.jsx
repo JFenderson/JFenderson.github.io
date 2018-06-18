@@ -18,14 +18,13 @@ import Education from './Education';
         const interestData = props.resume.interests;
         return(
             <div>
-                <div>
-                    <Profile profileData={profileData}/>
-                </div>
+                
+                <Profile profileData={profileData}/>
+                
                 <Projects projectData={projectData} />
                 <Experience workData={workData} />
                 <Skills skillsData={skillsData}/>
                 <Education educationData={educationData} />
-                <Interests interestData={interestData} />
             </div>
         )
 }
