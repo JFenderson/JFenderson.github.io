@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './component/Home';
+import './styles/index.scss';
 import * as json from './resume.json';
 
 // const json = [

@@ -14,17 +14,19 @@ import style from '../styles/index.scss'
 
     return(
         <div className={style.profile}>
-            <div>
+            <div className={style.___image}>
                 <img src={profileObj.picture} alt="profile picture"/>
             </div>
             <section>
                 <h1>{profileObj.name}</h1>
                 <h3>{profileObj.label}</h3>
-                <div>
-                    <span>{profileObj.location}</span>
-                    <span>{profileObj.phone}</span>
-                    <span>{profileObj.email}</span>
-                </div>
+                <ul>
+                   <li>{profileObj.location}</li>
+                    <li>{profileObj.phone}</li>
+                    <li>{profileObj.email}</li>
+                 
+                </ul>
+                    
             </section>
             <ul>
                 {getSocialLinks}

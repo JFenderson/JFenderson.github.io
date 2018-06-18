@@ -4,7 +4,6 @@ import React from 'react';
 const Projects = (props) => {
     const projectsObj = props.projectData;
     const getProjects = props.projectData.map(function(item, index) {
-        console.log(item)
         return(
             <div className="box-list__box" key={index}>
             <h3 className="section-box-title">{item.name}</h3>

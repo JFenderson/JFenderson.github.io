@@ -4,15 +4,16 @@ import moment from 'moment';
 
 const Volunteer = (props) => {
 
-    const getVolunteer = props.volunteerData.map(function(item, index) {
+    const getVolunteer = props.volunteerData.map((item, index)=> {
+      console.log(item)
       const startDate = moment(item.startDate).format('MMM, YYYY');
       const endDate = moment(item.endDate).format('MMM, YYYY');
       return (
           <div className="box-list__box" key={index}>
-            <h3 className="section-box-title"><a href={item.website} target="_blank">{item.organization}</a></h3>
+            <h3 className="section-box-title"><a href={item.website} target="_blank">{item.company}</a></h3>
             <div>{item.position}</div>
-            <div>{startDate} - {endDate}</div>
-            <div>{item.summary}</div>
+            <div>{item.startDate} - {item.endDate}</div>
+            <div></div>
           </div>
       )
     });
