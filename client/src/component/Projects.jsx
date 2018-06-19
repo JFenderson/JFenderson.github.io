@@ -8,8 +8,8 @@ const Projects = (props) => {
             <div className="box-list__box" key={index}>
             <h3 className="section-box-title">{item.name}</h3>
             <span>{item.decription}</span>
-            <div>task:{item.tasks}</div>
-            <div>tech used:{item.technologies}</div>
+            <div className="box-list__about"><span>Task:</span>{item.tasks}</div>
+            <div className="box-list__about"><span>Tech Used:</span>{item.technologies}</div>
           </div>
         )
     });

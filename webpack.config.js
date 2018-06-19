@@ -49,34 +49,21 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                exclude:/node_modules/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                sourceMap: true,
-                                importLoaders: 2,
-                                localIdentName: '[name]__[local]__[hash:base64:5]'
-                            }
-                        },
-                        'sass-loader'
-                    ]
-                })
-            },
+                loaders: ["style-loader", "css-loader", "sass-loader"],
+                exclude: "/node_modules"
+              },
             {
                 exclude: [
                     /\.html$/,
                     /\.(js|jsx)$/,
                     /\.css$/,
                     /\.scss$/,
-                    /\.json$/
+                    /\.json$/,
+
                 ],
                 loader: require.resolve('file-loader'),
                 options: {
-                    name: 'static/media/[name].[hash:8].[ext]'
+                    name: 'static/media/[name].[ext]'
                 }
             }
         ]

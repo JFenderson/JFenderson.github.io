@@ -4,31 +4,45 @@
     &__title {
       margin: 0 0 7px 0;
       padding: 0;
-      color: $primary-color;
+      color: $secondary-color;
       border-bottom: 1px solid #e2e2e2;
     }
   }
   
+  .section-content{
+    display: grid;
+  }
   
   .section-box-title {
     margin: 0 0 3px 0;
     padding: 0;
-    font-size: 18px;
-  
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-  
+    font-size: 20px;
+    text-align: center;
     span {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 17px;
     }
   }
   
   
   .box-list {
+    display: block;
+    /* width: 50%; */
+    grid-auto-columns: auto auto;
     &__box {
+      display: grid;
       margin-bottom: $section-box-gutter;
+      border: 0.5px solid black;
+      width: 50%;
+      height: 15em;
+      border-radius: 10px;
+      float: left;
+      padding: 10px;
+    }
+    &__about{
+      font-size: 15px;
+      span{
+        font-weight: 700;
+      }
     }
   }

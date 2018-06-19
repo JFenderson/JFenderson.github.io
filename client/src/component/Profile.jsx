@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import * as FaIconPack from 'react-icons/lib/fa';
-import style from '../styles/index.scss'
 
 
 
@@ -13,8 +12,8 @@ import style from '../styles/index.scss'
  });
 
     return(
-        <div className={style.profile}>
-            <div className={style.___image}>
+        <div className="profile-box">
+            <div className="profile-box___image">
                 <img src={profileObj.picture} alt="profile picture"/>
             </div>
             <section>
