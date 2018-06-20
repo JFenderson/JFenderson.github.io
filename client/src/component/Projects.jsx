@@ -5,11 +5,16 @@ const Projects = (props) => {
     const projectsObj = props.projectData;
     const getProjects = props.projectData.map(function(item, index) {
         return(
-            <div className="box-list__box" key={index}>
-            <h3 className="section-box-title">{item.name}</h3>
-            <span>{item.decription}</span>
-            <div className="box-list__about"><span>Task:</span>{item.tasks}</div>
-            <div className="box-list__about"><span>Tech Used:</span>{item.technologies}</div>
+            <div className="card"  key={index}>
+            <div className="card-header">
+              <h3 className="section-box-title">{item.name}</h3>
+            </div>
+            <div className="card-body __box">
+              <span>{item.decription}</span>
+              <div className="box-list__about"><span>Task:</span>{item.tasks}</div>
+              <div className="box-list__about"><span>Tech Used:</span>{item.technologies}</div>
+            </div>
+
           </div>
         )
     });

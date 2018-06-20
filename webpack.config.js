@@ -51,6 +51,15 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ["style-loader", "css-loader", "sass-loader"],
                 exclude: "/node_modules"
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: {
+                  loader: "file-loader",
+                  options: {
+                    name: "[path][name].[hash].[ext]",
+                  },
+                },
               },
             {
                 exclude: [
@@ -59,7 +68,7 @@ module.exports = {
                     /\.css$/,
                     /\.scss$/,
                     /\.json$/,
-
+                    /\.(jpg|png)$/
                 ],
                 loader: require.resolve('file-loader'),
                 options: {

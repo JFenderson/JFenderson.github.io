@@ -2,7 +2,7 @@
     "basics": {
         "name": "Joseph Fenderson",
         "label": "Junior Web Developer",
-        "picture": "/client/images/profilePic.jpg",
+        "picture": "./src/images/profilePic.jpg",
         "email": "fenderson.joseph@gmail.com",
         "phone": "2053967054",
         "website": "In Progress",
@@ -72,7 +72,7 @@
             "technologies": "HTML, CSS, JavaScript, React JS, Node JS, AWS(S3), MySQL"
         },
         {
-            "name": "DBLab- Blog Project",
+            "name": "DBLab - Blog Project",
             "decription": "React based app to showcase message posting.",
             "task": "I created a server and client side of this react app using MySQL database, stripe payment system, a mailing system, a JavaScript compiler, node server routing and authentication",
             "technologies": "HTML, CSS, JavaScript, React JS, Node JS, MySQL, Passport JS, Stripe, Mailgun JS, Babel JS, Express JS"
@@ -132,6 +132,12 @@
             "area": "Full-Stack Web Development",
             "degree": "Certificate",
             "startDate": "2018-01",
+            "endDate": "2018-04"
+        },
+        {
+            "institution": "Robert E. Lee High Shcool(Montgomery, AL)",
+            "degree": "High School",
+            "startDate": "2008-01",
             "endDate": "2018-04"
         }
     ],

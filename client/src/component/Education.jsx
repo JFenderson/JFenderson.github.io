@@ -6,10 +6,15 @@ const Education = props => {
   		const startdate = moment(item.startDate).format('MMM, YYYY');
   		const enddate = moment(item.endDate).format('MMM, YYYY');
   		return (
-          <div className="box" key={index}>
+          <div className=" card box" key={index}>
+          <div className="card-header">
             <h3 className="section-box-title">{item.studyType} {item.area}</h3>
-  				  <span>{item.institution}</span>
-  				  <div>Studied: {startdate} - {enddate}</div>
+          </div>
+            <div className="card-body">
+              <span>{item.institution}</span>
+              <div>Studied: {startdate} - {enddate}</div>
+            </div>
+
   				</div>
         )
   	});
