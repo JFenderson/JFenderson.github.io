@@ -23,7 +23,6 @@ import * as FaIconPack from 'react-icons/lib/fa';
                    <li>{profileObj.location}</li>
                     <li>{profileObj.phone}</li>
                     <li>{profileObj.email}</li>
-                 
                 </ul>
             <ul>
                 {getSocialLinks}
