@@ -14,3 +14,22 @@
         font-size: 2em;
     }
 }
+.profile-box{
+    width: 100%;
+    text-align: center;
+    grid-row-start: row1-start;
+    grid-row-end: last-line;
+    grid-column-start: col1-start;
+    grid-column-end: col1-end;
+    background-color: #c1c1c1;
+    &___image {
+        width: 100%;
+        text-align: center;
+        padding: 5em;
+        img {
+            max-width: 20em;
+            border-radius: 50%;
+        }
+      }
+
+}

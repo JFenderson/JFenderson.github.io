@@ -4,7 +4,9 @@ $font-color: rgb(82, 82, 82);
 $section-gutter: 30px;
 $section-box-gutter: 10px;
 
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 @import './profile';
 @import './section';
@@ -25,7 +27,7 @@ html, body{
 .mainContainer{
     display: grid;
     grid-template-columns: [col1-start] 30% [col1-end col2-start] auto [end-col];
-    grid-template-rows: [row1-start] auto [row1-end row2-start] auto [row2-end third-line] auto [row3-end row4-start] auto [row4-end row5-start] auto [row5-end row6-start] auto [last-line];
+    grid-template-rows: [row1-start] auto [row1-end row2-start] auto [row2-end third-line] auto [row3-end row4-start] auto [row4-end row5-start] auto [row5-end row6-start] auto [row6-end last-line];
 }
 
 
@@ -52,20 +54,23 @@ html, body{
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 .profile-box {
-    width: 100%;
-    text-align: center;
-    grid-row-start: row1-start;
-    grid-row-end: row1-end;
-    &___image {
-      width: 100%;
-      text-align: center;
-      
-      img {
-        max-width: 200px;
-        border-radius: 50%;
-      }
+  width: 100%;
+  text-align: center;
+  grid-row-start: row1-start;
+  grid-row-end: last-line;
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+    h1{
+        font-size: 3.5rem;
     }
-  
+    h3{
+        font-size: 1.75em;
+    }
+    ul{
+        list-style-type: none;
+        text-align: center;
+        font-size: 1.3em;
+    }
     &__title {
       margin: 0;
       padding: 0;
@@ -90,9 +95,9 @@ html, body{
   
     &__item {
       display: inline-block;
-  
+        font-size: 1.2em;
       a {
-        color: $primary-color;
+        color: $secondary-color;
         text-decoration: none;
         margin: 0 5px;
       }
