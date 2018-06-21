@@ -7,6 +7,31 @@
       color: $secondary-color;
       border-bottom: 1px solid #e2e2e2;
     }
+    &__projects{
+      display: grid;
+      grid-row-start: row2-start;
+      grid-column-end: row2-end;
+    }
+    &__internship{
+      display: grid;
+      grid-row-start: row3-start;
+      grid-column-end: row3-end;
+    }
+    &__skills{
+      display: grid;
+      grid-row-start: row4-start;
+      grid-column-end: row4-end;
+    }
+    &__education{
+      display: grid;
+      grid-row-start: row5-start;
+      grid-column-end: row5-end;
+    }
+    &__work{
+      display: grid;
+      grid-row-start: row6-start;
+      grid-column-end: row6-end;
+    }
   }
   
   .section-content{

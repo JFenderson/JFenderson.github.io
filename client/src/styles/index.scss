@@ -24,7 +24,8 @@ html, body{
 }
 .mainContainer{
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: [col1-start] 30% [col1-end col2-start] auto [end-col];
+    grid-template-rows: [row1-start] auto [row1-end row2-start] auto [row2-end third-line] auto [row3-end row4-start] auto [row4-end row5-start] auto [row5-end row6-start] auto [last-line];
 }
 
 
@@ -53,11 +54,12 @@ html, body{
 .profile-box {
     width: 100%;
     text-align: center;
-  
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
     &___image {
       width: 100%;
       text-align: center;
-  
+      
       img {
         max-width: 200px;
         border-radius: 50%;

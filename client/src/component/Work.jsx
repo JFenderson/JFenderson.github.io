@@ -17,7 +17,7 @@ const Work = (props) => {
     });
 
     return (
-        <section className="section section__publications">
+        <section className="section section__work">
           <h2 className="section__title">Work</h2>
           <div className="section-content">
             <div className="box-list">

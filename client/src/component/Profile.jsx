@@ -25,11 +25,11 @@ import * as FaIconPack from 'react-icons/lib/fa';
                     <li>{profileObj.email}</li>
                  
                 </ul>
-                    
-            </section>
             <ul>
                 {getSocialLinks}
             </ul>
+                    
+            </section>
         </div>
     )
 }
