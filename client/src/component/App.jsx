@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Profile from './Profile';
 import ProfileImage from './ProfileImage';
 import Skills from './Skills';
+import About from './About';
 import Projects from './Projects';
 import Work from './Work';
 import Internship from './Internship';
@@ -21,7 +22,9 @@ import Volunteer from './Volunteer';
         return(
             <div className="mainContainer">
                 <Profile profileData={profileData}/>
-                <Projects projectData={projectData} />
+                {/* <ProfileImage profileData={profileData} /> */}
+                <About />
+                {/* <Projects projectData={projectData} /> */}
                 <Work workData={workData} />
                 <Internship internshipData={internshipData} />
                 <Volunteer volunteer={volunteerData} />
