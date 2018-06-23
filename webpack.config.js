@@ -3,6 +3,7 @@ const CLIENT_DEST = path.join(__dirname, './client/dist');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+    watch: true,
     mode: 'development',
     entry: './client/src/index.js',
     output: { path: CLIENT_DEST, 
