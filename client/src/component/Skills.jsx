@@ -8,8 +8,10 @@ const Skills = props => {
     const getSkills = props.skillsData.map(function(item, index) {
   		return (
         <div className="box-list__box" key={index}>
-            <h3 className="section-box-title">{item.name} <span>{item.level}</span></h3>
-            <div>{item.keywords}</div>
+            {/* <h3 className="section-box-title">{item.name} <span>{item.level}</span></h3> */}
+            <ul>{item.keywords.map((item,index)=>{
+              return <li key={`${index}-item`}>{item}</li>
+            })}</ul>
   				</div>
         )
   	});

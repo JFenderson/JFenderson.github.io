@@ -27,7 +27,7 @@ import * as FaIconPack from 'react-icons/lib/fa';
             <ul>
                 {getSocialLinks}
             </ul>
-                    
+            <span><a href={profileObj.resume} download>Download CV</a></span> 
             </section>
         </div>
     )

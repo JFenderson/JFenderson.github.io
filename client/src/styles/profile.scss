@@ -6,6 +6,7 @@
         text-align: center;
         list-style-type: none;
         font-size: 17px;
+        color: white
         li{
             margin-right: 10px;
         }
@@ -13,4 +14,24 @@
     .contactIcons{
         font-size: 2em;
     }
+}
+.profile-box{
+    width: 100%;
+    text-align: center;
+    grid-row-start: row1-start;
+    grid-row-end: last-line;
+    grid-column-start: col1-start;
+    grid-column-end: col1-end;
+    background-color: #2a719e;
+    height: 120vh;
+    &___image {
+        width: 100%;
+        text-align: center;
+        // padding: 5em;
+        img {
+            max-width: 15em;
+            // border-radius: 50%;
+        }
+      }
+
 }

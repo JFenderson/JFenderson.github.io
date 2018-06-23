@@ -6,21 +6,50 @@
       padding: 0;
       color: $secondary-color;
       border-bottom: 1px solid #e2e2e2;
+
+    }
+    &__about{
+      display: grid;
+      grid-row-start: row1-start;
+      grid-column-end: row1-end;
     }
     &__projects{
       display: grid;
-      grid-row-start: row2-start;
-      grid-column-end: row2-end;
+      grid-row-start: row1-start;
+      grid-column-end: row1-end;
+      /* padding-left: 10px; */
+      background-color: #e2e2e2;
     }
     &__internship{
       display: grid;
       grid-row-start: row3-start;
       grid-column-end: row3-end;
     }
-    &__skills{
+    &__volunteer{
       display: grid;
       grid-row-start: row4-start;
       grid-column-end: row4-end;
+    }
+    &__skills{
+      display: grid;
+      grid-row-start: row6-start;
+      grid-column-end: last-line;
+      ul{
+        list-style-type: none;
+        display: flex;
+      }
+      li{
+        margin: 5px;
+        font-size: 17px;
+        transition-timing-function: ease;
+        transition: 0.2s;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      li:hover{
+        font-size: 19px;
+      }
     }
     &__education{
       display: grid;
@@ -29,8 +58,11 @@
     }
     &__work{
       display: grid;
-      grid-row-start: row6-start;
-      grid-column-end: row6-end;
+      grid-row-start: row2-start;
+      grid-column-end: row2-end;
+      .box-list__box{
+        border-bottom: 1px solid rgba(47, 105, 156, 0.85);
+      }
     }
   }
   
@@ -58,15 +90,21 @@
       position: relative;
       display: inline-grid;
       margin: 5px;
-      width: 32rem;
+      width: 40em;
       -ms-flex-direction: column;
       flex-direction: column;
       min-width: 0;
       word-wrap: break-word;
       background-color: #fff;
       background-clip: border-box;
-      border: 1px solid rgba(0,0,0,.125);
+      border: 1px solid rgba(47, 105, 156, 0.85);
       border-radius: .25rem;
+      .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(246, 246, 249, 0);
+        border-bottom: 1px solid rgba(47, 105, 156, 0.85);
+    }
     }
     .__box {
       display: grid;

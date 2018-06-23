@@ -11,7 +11,7 @@ const Work = (props) => {
             <div className="box-list__box" key={index}>
               <h3 className="section-box-title">{item.company}</h3>
               <div>{item.position}</div>
-              <div>{item.startDate} - {item.endDate}</div>
+              <div>From: {item.startDate} - To: {item.endDate}</div>
             </div>
         )
     });

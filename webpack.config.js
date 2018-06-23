@@ -54,7 +54,7 @@ module.exports = {
                 exclude: "/node_modules"
             },
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(pdf|gif|png|jpe?g|svg)$/,
                 use: {
                   loader: "file-loader",
                   options: {
@@ -69,7 +69,7 @@ module.exports = {
                     /\.css$/,
                     /\.scss$/,
                     /\.json$/,
-                    /\.(jpg|png)$/
+                    /\.(pdf|gif|png|jpe?g|svg)$/,
                 ],
                 loader: require.resolve('file-loader'),
                 options: {
