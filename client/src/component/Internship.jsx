@@ -10,8 +10,8 @@ const Internship = (props) => {
         return (
             <div className="box-list__box" key={index}>
               <h3 className="section-box-title"><a id="internLink" href={item.website} target="_blank">{item.name}</a></h3>
-              <div>{item.position}</div>
-              <div>{item.startDate} - {item.endDate}</div>
+              <h5>{item.position}</h5>
+              <span>{item.startDate} - {item.endDate}</span>
             </div>
         )
     });

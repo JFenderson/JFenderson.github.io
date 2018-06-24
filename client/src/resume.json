@@ -30,20 +30,20 @@
         {
             "company": "Sheraton Birmingham Hotel",
             "position": "Accounts Receivables Agent",
-            "startDate": "2016-07",
-            "endDate": "2018-01"
+            "startDate": "Jul-2016",
+            "endDate": "Jan-2018"
         },
         {
             "company": "Westin Birmingham Hotel",
             "position": "Night Auditor",
-            "startDate": "2016-06",
-            "endDate": "2016-01"
+            "startDate": "Jun-2016",
+            "endDate": "Jan-2016"
         },
         {
             "company": "Westin Birmingham Hotel",
             "position": "Welcome Ambassador",
-            "startDate": "2015-07",
-            "endDate": "2016-01"
+            "startDate": "Jul-2015",
+            "endDate": "Jan-2016"
         }
     ],
     "internship": [
@@ -51,8 +51,8 @@
             "name": "Innovate Birmingham",
             "position": "Teacher's Assistant",
             "website": "https://innovatebirmingham.org",
-            "startDate": "2018-04",
-            "endDate": "2018-08"
+            "startDate": "Apr-2018",
+            "endDate": "Aug-2018"
         }
     ],
     "volunteer": [
@@ -60,8 +60,8 @@
             "company": "STREAM Innovations",
             "position": "Teacher",
             "website": "https://streaminnovations.org",
-            "startDate": "2018-06",
-            "endDate": "2018-08",
+            "startDate": "Apr-2018",
+            "endDate": "Jul-2018",
             "summary": "Volunteered teaching 7th and 8th grade student the fundamentals of web development using technologies such as HTML, CSS, JavaScript and JQuery."
         }
     ],
@@ -122,49 +122,70 @@
         }],
     "education": [
         {
-            "institution": "Miles College",
-            "area": "Business Administration",
-            "degree": "Bachelor of Science",
-            "startDate": "2010-08",
-            "endDate": "2015-05"
-        },
-        {
             "institution": "Innovate Birmingham",
+            "studyType": "Certificate of Completion",
             "area": "Full-Stack Web Development",
             "degree": "Certificate",
-            "startDate": "2018-01",
-            "endDate": "2018-04"
+            "startDate": "Jan-2018",
+            "endDate": "Apr-2018"
         },
         {
-            "institution": "Robert E. Lee High Shcool(Montgomery, AL)",
-            "degree": "High School",
-            "startDate": "2008-01",
-            "endDate": "2018-04"
+            "institution": "Miles College",
+            "studyType": "Bachelor of Science",
+            "area": "Business Administration",
+            "degree": "Bachelor of Science",
+            "startDate": " Aug-2010",
+            "endDate": "May-2015"
         }
     ],
     "skills": [
         {
-            "name": "Front End Development",
-            "level": "Junior",
-            "keywords": [
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "ES2015",
-              "jQuery",
-              "React",
-              "SASS",
-              "Babel",
-              "Bootstrap",
-              "Semantic UI",
-              "Bootstrap",
-              "Node",
-              "MySQL",
-              "Git",
-              "Responsive"
-            ]
-          }
+            "skill": "HTML & CSS",
+            "percent": "90"
+        },
+        {
+            "skill": "JavaScript",
+            "percent": "89"
+        },
+        {
+            "skill": "JQuery",
+            "percent": "81"
+        },
+        {
+            "skill": "React",
+            "percent": "90"
+        },
+        {
+            "skill": "SASS",
+            "percent": "71"
+        },
+        {
+            "skill": "Babel",
+            "percent": "70"
+        },
+        {
+            "skill": "Node JS",
+            "percent": "87"
+        },
+        {
+            "skill": "MySQL",
+            "percent": "75"
+        },
+        {
+            "skill": "Git",
+            "percent": "80"
+        },
+        {
+            "skill": "Bootstrap",
+            "percent": "82"
+        },
+        {
+            "skill": "Angular",
+            "percent": "52"
+        },
+        {
+            "skill": "Visual Studio Code",
+            "percent": "94"
+        }
     ]
-
-
 }
