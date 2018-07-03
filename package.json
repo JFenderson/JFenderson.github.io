@@ -4,13 +4,11 @@
   "description": "",
   "main": "server/lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "webpack",
+    "start": "nodemon --use_strict server/lib/index.js",
+    "bundle": "webpack",
     "build:server": "babel ./server/src -d ./server/lib",
     "dev": "concurrently -k \"npm run watch:client\" \"npm run watch:server\"",
     "prepare": "npm run build:server",
-    "start": "npm run build:client && npm run build:server && npm run start:server",
     "start:server": "node server/lib/index.js",
     "watch:client": "webpack --watch",
     "watch:server": "nodemon --watch server --watch lib index.js"
@@ -28,6 +26,7 @@
     "nodemon": "^1.17.5",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.0",
     "react-icons": "^2.2.7",
     "react-router-dom": "^4.2.2"

@@ -9,9 +9,9 @@ const Volunteer = props => {
       return (
           <div className="box-list__box" key={index}>
             <h3 className="section-box-title"><a id="volLink" href={item.website} target="_blank">{item.company}</a></h3>
-            <div>{item.position}</div>
-            <div>From: {item.startDate} - To: {item.endDate}</div>
-            <div>{item.summary}</div>
+            <h5>{item.position}</h5>
+            <span>{item.startDate} - {item.endDate}</span>
+            <p>{item.summary}</p>
           </div>
       )
     });
